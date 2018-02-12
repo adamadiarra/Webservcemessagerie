@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/messagerie_ngsystem?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password"></property>
+    
+    <!-- Use the C3P0 connection pool.-->
+        <property name="hibernate.c3p0.acquire_increment">1</property>
+        <property name="hibernate.c3p0.idle_test_period">100</property><!-- seconds -->
+        <property name="hibernate.c3p0.max_size">100</property><!-- Taille maximale du pool -->
+        <property name="hibernate.c3p0.min_size">10</property><!-- Taille minimale du pool -->
+        <!--<property name="hibernate.c3p0.timeout">0</property> seconds / 0 =jamais-->
+        <property name="hibernate.c3p0.timeout">1800</property> <!--seconds / 0 =jamais-->
+        <property name="hibernate.c3p0.max_statements">0</property><!-- Taille du cache de statements de C3P0. 0 = désactive le cache -->
+       
+        <!-- Print SQL to stdout. -->
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+       
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        
+        <mapping class="net.ngsystem.dev.messagerieservice.entities.Alias"/>
+        <mapping class="net.ngsystem.dev.messagerieservice.entities.Utilisateur"/>
+        <mapping class="net.ngsystem.dev.messagerieservice.entities.Domaine"/>
+        <mapping class="net.ngsystem.dev.messagerieservice.entities.Droit"/>
+        <mapping class="net.ngsystem.dev.messagerieservice.entities.Profil"/>
+        <mapping class="net.ngsystem.dev.messagerieservice.entities.AttribuerDroit"/>
+           
+    
+    
+  </session-factory>
+</hibernate-configuration>

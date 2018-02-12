@@ -1,0 +1,13 @@
+net\ngsystem\dev\messagerieservice\dao\factory\DaoFactory.class
+net\ngsystem\dev\messagerieservice\entities\Alias.class
+net\ngsystem\dev\messagerieservice\entities\AttribuerDroit.class
+net\ngsystem\dev\messagerieservice\rest\MessagerieRestService.class
+net\ngsystem\dev\messagerieservice\dao\Dao.class
+net\ngsystem\dev\messagerieservice\dao\DaoImpl.class
+net\ngsystem\dev\messagerieservice\entities\Utilisateur.class
+net\ngsystem\dev\messagerieservice\dao\DaoImpl$1.class
+net\ngsystem\dev\messagerieservice\entities\Droit.class
+net\ngsystem\dev\messagerieservice\dao\DaoImpl$3.class
+net\ngsystem\dev\messagerieservice\entities\Domaine.class
+net\ngsystem\dev\messagerieservice\entities\Profil.class
+net\ngsystem\dev\messagerieservice\dao\DaoImpl$2.class
